@@ -55,7 +55,7 @@ app.put('/:id',(req,res) =>{
   //guardamos en el archivo
   const json_books = JSON.stringify(books);
   fs.writeFileSync('./db/db.json', json_books, 'utf-8');
-  res.status(200).send("producto modificado");
+  res.status(200).send("persona modificado");
 })
 // ---------------------------------------------------------
 
@@ -65,7 +65,7 @@ app.delete('/:id',(req,res) =>{
      // guardando informacion
   const json_books = JSON.stringify(books);
   fs.writeFileSync('./db/db.json', json_books, 'utf-8');
-  res.status(200).send("producto eliminado");
+  res.status(200).send("persona eliminada");
 })
 // ---------------------------------------------------------
 
