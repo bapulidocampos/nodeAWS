@@ -1,0 +1,20 @@
+ssh -i "llavePruebaDocker.pem" ubuntu@ec2-18-118-49-34.us-east-2.compute.amazonaws.com
+para dar permisos y manejar docker
+sudo su 
+por compose
+docker-compose up
+docker run -dp 80:4000 -e PORT=4000 -e HOST=0.0.0.0 nodeimage
+docker ps
+docker stop #numContainer
+
+//el otro servido
+docker-compose up --build
+
+//crear una imagen
+docker build -t node-api .
+
+sudo docker build -t nodeimage .
+
+//ejecutarlo como en segndo plano
+docker 
+docker run -dp 80:4000 -e PORT=4000 -e HOST=0.0.0.0 node-api
